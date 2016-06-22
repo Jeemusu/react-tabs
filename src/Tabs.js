@@ -49,10 +49,11 @@ class Tabs extends React.Component {
     renderNavItem(key) {
 
         let tab = this.props.children[key];
-
+        let id = tab.props.id ? tab.props.id : '';
+        
         return (
             <li key={ key } className={ this.state.activeIndex == key ? 'active' : ''}>
-                <a href="#" onClick={ this.handleOnClick.bind(this, key) }>{ tab.props.title }</a>
+                <a href={ "#" + id } onClick={ this.handleOnClick.bind(this, key) }>{ tab.props.title }</a>
             </li>
         );
     }

@@ -17,8 +17,8 @@ Create the markup for your tabs using JSX.
 ```
 
     <Tabs className="tabs-wrapper">
-        <Tab title="Tab One" active="true">Tab One Content</Tab>
-        <Tab title="Tab Two">
+        <Tab title="Tab One" id="tabOne" active="true">Tab One Content</Tab>
+        <Tab title="Tab Two" id="tabTwo">
             <div>Tab Two Content</div>
         </Tab> 
         <Tab title="Tab Three">
@@ -34,8 +34,8 @@ The above code would generate the following HTML.
 
     <div class="tabs-wrapper">
         <ul class="tabs-nav">
-            <li class="active"><a href="#">Tab One</a></li>
-            <li class=""><a href="#">Tab Two</a></li>
+            <li class="active"><a href="#tabOne">Tab One</a></li>
+            <li class=""><a href="#tabTwo">Tab Two</a></li>
             <li class=""><a href="#">Tab Three</a></li>
         </ul>
 
