@@ -95,14 +95,14 @@ ul.tabs-nav li.active a {
 Check out the [working example](http://jsbin.com/xabafi/edit?output).
 
 
-## `<Tabs />` Properties
+## Tabs Component Properties
 
 ###className (optional)
 Define the type message you want to define, this assaigns a class to the element.
 
 type: `string`
 
-## `<Tab />` Properties
+## Tab Component Properties
 
 ###title (required)
 The text to be used for the tabs navigation anchor.
